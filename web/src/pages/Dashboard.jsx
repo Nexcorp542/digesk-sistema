@@ -1,7 +1,6 @@
 import { useEffect, useState } from 'react';
 
-const API_URL = 'http://localhost:4000';
-
+const API_URL = import.meta.env.VITE_API_URL;
 function todayISO() {
   const d = new Date();
   return `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, '0')}-${String(d.getDate()).padStart(2, '0')}`;
