@@ -1,4 +1,4 @@
-export const API_URL = import.meta.env.VITE_API_URL ?? 'http://localhost:4000';
+export const API_URL = 'https://digesk-sistema.vercel.app';
 
 export async function apiGet(path) {
   const res = await fetch(`${API_URL}${path}`);
