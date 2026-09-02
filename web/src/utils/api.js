@@ -1,8 +1,5 @@
 export const API_URL = 'https://digesk-sistema.vercel.app';
-<<<<<<< HEAD
 
-=======
->>>>>>> 8c1a338 (Set production API URL)
 export async function apiGet(path) {
   const res = await fetch(`${API_URL}${path}`);
   if (!res.ok) throw new Error(`GET ${path} → HTTP ${res.status}`);
